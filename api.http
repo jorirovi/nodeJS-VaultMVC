@@ -2,24 +2,24 @@ GET http://localhost:9876/movies
 
 ### consulta de Pelis por ID
 
-GET http://localhost:9876/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+GET http://localhost:9876/movies/f3d28614-a66b-11ef-bb4c-daa54ca21784
 
 ### Consulta por genero de Peli
 
-GET http://localhost:9876/movies?genre=drama
+GET http://localhost:9876/movies?genre=DRAMA
 
 ### crear una nueva pelicula
 POST http://localhost:9876/movies
 Content-Type: application/json
 
 {
-  "title": "Inception",
-  "year": 2010,
-  "director": "Christopher Nolan",
-  "duration": 148,
-  "poster": "https://m.media-amazon.com/images/I/91Rc8cAmnAL._AC_UF1000,1000_QL80_.jpg",
-  "genre": ["Action", "Adventure", "Sci-Fi"],
-  "rate": 8.8
+  "title": "Titanic",
+  "year": 1997,
+  "director": "James Cameron",
+  "duration": 195,
+  "poster": "https://i.pinimg.com/originals/42/42/65/4242658e6f1b0d6322a4a93e0383108b.png",
+  "genre": ["Drama", "Romance"],
+  "rate": 7.8
 }
 
 ### Actualizar una Peli
